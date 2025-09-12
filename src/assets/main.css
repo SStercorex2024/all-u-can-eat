@@ -1,1 +1,3 @@
-@import './base.css';
+@import 'style/normalize.css';
+@import 'style/base.css';
+@import 'style/global.css';
