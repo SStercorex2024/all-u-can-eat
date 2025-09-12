@@ -15,10 +15,12 @@
 
   --transition-duration-large: 0.6s;
 
-  --border-radius-m: 6px;
-  --border-radius-l: 10px;
+  --border-radius-m: 4px;
 
   --button-height: 48px;
+
+  --height-button-l: 46px;
+  --height-button-m: 36px;
 }
 
 body {
