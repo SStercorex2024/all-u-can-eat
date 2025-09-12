@@ -2,13 +2,18 @@
 import type { InputString } from '@/Interfaces/InputString.ts'
 
 const props = defineProps<InputString>()
+
+const modelValue = defineModel<string>()
 </script>
 
 <template>
-  <input :type="props.type"
-         :name="props.type"
-         :placeholder="props.placeholder"
-         :id="props.type" />
+  <input
+    v-model="modelValue"
+    :type="props.type"
+    :name="props.type"
+    :placeholder="props.placeholder"
+    :id="props.type"
+  />
 </template>
 
 <style scoped>
@@ -25,6 +30,7 @@ input {
 
 input::placeholder {
   font-size: 16px;
+  opacity: 0.75;
   color: var(--color-black);
 }
 </style>

@@ -5,8 +5,53 @@ import TicToc from '@/components/icons/TicToc.vue'
 import Insta from '@/components/icons/Insta.vue'
 import Pinterest from '@/components/icons/Pinterest.vue'
 import Facebook from '@/components/icons/Facebook.vue'
+import { ref, watch } from 'vue'
 
 const pages = ['About', 'Blog', 'Contact']
+
+const emailValue = ref<string>()
+const emailErrors = ref<string>()
+const emailSuccess = ref<boolean>(false)
+const isEmailValid = ref<boolean>(false)
+
+function omSubmitEmail(email: string | undefined): void {
+  if (emailValidator(email)) {
+    emailSuccess.value = true
+    emailErrors.value = ''
+    emailValue.value = ''
+  }
+}
+
+function emailValidator(email: string | undefined) {
+  if (email === undefined) {
+    emailErrors.value = 'Your email please'
+    isEmailValid.value = false
+    return false
+  }
+
+  if (!email.includes('@gmail.com')) {
+    emailErrors.value = 'We accept only @gmail.com domen'
+    isEmailValid.value = false
+    return false
+  }
+
+  const emailRegex = /^[^\s@]+@gmail\.com$/
+  if (!emailRegex.test(email)) {
+    emailErrors.value = 'Неверный формат email'
+    isEmailValid.value = false
+    return false
+  }
+
+  emailErrors.value = ''
+  isEmailValid.value = true
+  return true
+}
+
+watch(emailValue, (value, oldValue) => {
+  if (oldValue !== value) {
+    emailErrors.value = ''
+  }
+})
 </script>
 
 <template>
@@ -17,8 +62,16 @@ const pages = ['About', 'Blog', 'Contact']
           <h1 class="footer__head-title">Want more recipes straight to your inbox?</h1>
           <form class="form">
             <label class="footer__form-label" for="email"> Sign up for the newsletter. </label>
-            <InputString type="email" placeholder="Goy@gmail.com" />
-            <OurButton class="footer__form-submit" :is-submit="true"> SUBMIT </OurButton>
+            <InputString v-model="emailValue" type="email" placeholder="Goy@gmail.com" />
+            <OurButton
+              @click.prevent="omSubmitEmail(emailValue)"
+              class="footer__form-submit"
+              :is-submit="true"
+            >
+              SUBMIT
+            </OurButton>
+            <p v-if="emailErrors" class="form-error">{{ emailErrors }}</p>
+            <p v-if="emailSuccess" class="form-success">Success! We already send letter for u</p>
           </form>
         </div>
       </div>
@@ -101,6 +154,7 @@ const pages = ['About', 'Blog', 'Contact']
 }
 
 .form {
+  position: relative;
   max-width: 373px;
   width: 100%;
   align-items: flex-start;
@@ -108,6 +162,22 @@ const pages = ['About', 'Blog', 'Contact']
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+}
+
+.form-error {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  color: red;
+  font-size: 14px;
+}
+
+.form-success {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  color: var(--color-gray);
+  font-size: 14px;
 }
 
 .footer__form-label {
