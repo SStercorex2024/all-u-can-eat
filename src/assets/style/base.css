@@ -18,9 +18,15 @@
   --border-radius-m: 4px;
 
   --button-height: 48px;
+  --button-height-m: 32px;
 
   --height-button-l: 46px;
   --height-button-m: 36px;
+
+  --z-index-inage-banner: 20;
+  --z-index-inage-banner-shadow: 25;
+  --z-index-slider-text-banner: 50;
+  --z-index-slider-navigation: 55;
 }
 
 body {

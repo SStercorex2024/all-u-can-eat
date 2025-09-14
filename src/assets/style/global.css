@@ -16,3 +16,10 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.white-btn {
+  height: var(--button-height-m);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-m);
+}
