@@ -27,7 +27,29 @@ const router = createRouter({
       path: '/categories',
       name: 'categories',
       component: () => import('@/views/Recipe/RecipeCategories.vue'),
+      children: [
+        {
+          path: '/breakfast',
+          name: 'breakfast',
+          component: () => import('@/views/Recipe/RecipeCategories.vue'),
+        },
+        {
+          path: '/lunch',
+          name: 'lunch',
+          component: () => import('@/views/Recipe/RecipeCategories.vue'),
+        },
+        {
+          path: '/dinner',
+          name: 'dinner',
+          component: () => import('@/views/Recipe/RecipeCategories.vue'),
+        },
+      ],
     },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: () => import('@/views/NotFound/NotFound.vue')
+    }
   ],
 })
 

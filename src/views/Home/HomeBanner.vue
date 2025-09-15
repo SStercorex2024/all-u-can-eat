@@ -119,7 +119,7 @@ const swiperOptions = {
           </div>
         </SwiperSlide>
         <div class="slier-navigation">
-          <div class="slider-button-next white-btn">
+          <div class="slider-button-prev white-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -135,7 +135,7 @@ const swiperOptions = {
               />
             </svg>
           </div>
-          <div class="slider-button-prev white-btn">
+          <div class="slider-button-next white-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
