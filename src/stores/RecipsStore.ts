@@ -6,12 +6,8 @@ export const useRecipsStore = defineStore('recips', () => {
   const recips = ref<RecipeDatabase>()
 
   async function fetchRecipes() {
-    try {
-      const response = await fetch('./bd.json')
-      recips.value = await response.json()
-    } catch (error) {
-      console.error('Ошибка загрузки рецептов:', error)
-    }
+    const response = await fetch('./bd.json')
+    recips.value = await response.json()
   }
 
   function getRecipesByCategory(category: MealType): Recipe[] {
@@ -22,11 +18,12 @@ export const useRecipsStore = defineStore('recips', () => {
   const allCategory = computed<Recipe[]>(() => {
     if (!recips.value) return []
 
-    return [
-      ...recips.value.Breakfast,
-      ...recips.value.Lunch,
-      ...recips.value.Dinner
-    ]
+    return [...recips.value.Breakfast, ...recips.value.Lunch, ...recips.value.Dinner]
+  })
+
+  const allNewesRecipes = computed<Recipe[]>(() => {
+    if (!allCategory.value) return []
+    return allCategory.value.filter((recipe) => recipe.newest === true)
   })
 
   function getCategoryByRecipeId(id: number): string {
@@ -41,7 +38,7 @@ export const useRecipsStore = defineStore('recips', () => {
     fetchRecipes,
     getRecipesByCategory,
     allCategory,
-    getCategoryByRecipeId
+    getCategoryByRecipeId,
+    allNewesRecipes,
   }
 })
-

@@ -5,6 +5,7 @@ export interface Recipe {
   servings: string
   timePrep: string
   timeCook: string
+  newest?: boolean
 }
 
 export interface RecipeDatabase {
@@ -13,5 +14,4 @@ export interface RecipeDatabase {
   Dinner: Recipe[]
 }
 
-export type MealType = "Breakfast" | "Lunch" | "Dinner"
-
+export type MealType = 'Breakfast' | 'Lunch' | 'Dinner'

@@ -18,6 +18,9 @@
 }
 
 .white-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: var(--button-height-m);
   color: var(--color-black);
   background-color: var(--color-white);
