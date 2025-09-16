@@ -2,6 +2,7 @@
 import HomeBanner from '@/views/Home/HomeBanner.vue'
 import RecipesByCategory from '@/views/Home/RecipesByCategory.vue'
 import NevestRecipes from '@/views/Home/NevestRecipes.vue'
+import HomeAbout from '@/views/Home/HomeAbout.vue'
 </script>
 
 <template>
@@ -9,5 +10,6 @@ import NevestRecipes from '@/views/Home/NevestRecipes.vue'
     <HomeBanner/>
     <RecipesByCategory/>
     <NevestRecipes/>
+    <HomeAbout/>
   </main>
 </template>
