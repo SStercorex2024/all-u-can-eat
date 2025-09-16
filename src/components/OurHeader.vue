@@ -2,7 +2,7 @@
 import OurButton from '@/components/OurButton.vue'
 import BurgerInactive from '@/components/icons/BurgerInactive.vue'
 import Ex from '@/components/icons/Ex.vue'
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import SearchButton from '@/components/SearchButton.vue'
 
 defineOptions({
@@ -25,6 +25,14 @@ const modalItems = [
 function toggleModal() {
   return (modalMenuIsOpen.value = !modalMenuIsOpen.value)
 }
+
+watch(modalMenuIsOpen, (isOpen) => {
+  if(isOpen) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+})
 </script>
 
 <template>
@@ -156,10 +164,11 @@ header {
 
 .modal__shadow {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: var(--z-index-modal-menu-shadow);
 }
 
 .menu {
@@ -174,7 +183,9 @@ header {
   flex-direction: column;
   row-gap: 16px;
   padding: 60px 60px 200px 60px;
+  overflow-y: auto;
   background-color: var(--color-gray);
+  z-index: var(--z-index-modal-menu);
 }
 
 .modal__close {

@@ -27,6 +27,8 @@
   --z-index-inage-banner-shadow: 25;
   --z-index-slider-text-banner: 50;
   --z-index-slider-navigation: 55;
+  --z-index-modal-menu-shadow: 950;
+  --z-index-modal-menu: 1000;
 }
 
 body {

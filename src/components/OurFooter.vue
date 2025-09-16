@@ -239,4 +239,22 @@ watch(
     color: var(--color-white);
   }
 }
+@media (max-width: 864px) {
+  .footer__head-title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 706px) {
+  .footer__head-title {
+    text-align: center;
+  }
+  .footer__head-content {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .footer__body-row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
 </style>
