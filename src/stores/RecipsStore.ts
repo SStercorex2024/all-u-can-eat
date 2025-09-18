@@ -1,14 +1,11 @@
 import { defineStore } from 'pinia'
-import type {
-  Recipe,
-  RecipeCategory,
-  RecipeDatabase
-} from '@/Interfaces/Recipe.ts'
+import type { Recipe, RecipeCategory, RecipeDatabase } from '@/Interfaces/Recipe.ts'
 import { ref, computed } from 'vue'
 
 export const useRecipsStore = defineStore('recips', () => {
   const recips = ref<RecipeDatabase>()
   const activeRecipe = ref<RecipeCategory>('Breakfast')
+  const activeOneRecipe = ref<Recipe>()
 
   async function fetchRecipes() {
     const response = await fetch('./bd.json')
@@ -28,8 +25,15 @@ export const useRecipsStore = defineStore('recips', () => {
 
   const allNewesRecipes = computed<Recipe[]>(() => {
     if (!allCategory.value) return []
+
     return allCategory.value.filter((recipe) => recipe.newest === true)
   })
+
+  const activeOneRecipeById = (id: number): Recipe | undefined => {
+    if (!id) return undefined
+
+    activeOneRecipe.value = allCategory.value.find((recipe) => recipe.id === id)
+  }
 
   function getCategoryByRecipeId(id: number): string {
     if (id >= 1 && id <= 12) return 'Breakfast'
@@ -45,6 +49,8 @@ export const useRecipsStore = defineStore('recips', () => {
     allCategory,
     getCategoryByRecipeId,
     allNewesRecipes,
-    activeRecipe
+    activeRecipe,
+    activeOneRecipeById,
+    activeOneRecipe,
   }
 })

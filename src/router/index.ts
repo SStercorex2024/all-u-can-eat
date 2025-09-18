@@ -71,6 +71,11 @@ const router = createRouter({
       ],
     },
     {
+      path: '/one-recipe',
+      name: 'one-recipe',
+      component: () => import('@/views/OneRecipe/OneRecipe.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('@/views/NotFound/NotFound.vue'),
@@ -82,7 +87,7 @@ const router = createRouter({
     } else {
       return { top: 0 }
     }
-  }
+  },
 })
 
 export default router

@@ -43,29 +43,28 @@ const toggleShowAll = () => {
             :alt="recipe.name"
             loading="lazy"
           />
-          <div class="card__link-wrapper">
-            <RouterLink
-              class="card__link"
-              :to="{ name: store.getCategoryByRecipeId(recipe.id).toLowerCase() }"
-              >View recipe
-              <span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
-            </RouterLink>
-          </div>
+          <RouterLink
+            @click="store.activeOneRecipeById(recipe.id)"
+            class="card__link"
+            :to="{ name: 'one-recipe' }"
+            >View recipe
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </span>
+          </RouterLink>
         </div>
         <span class="card__name white-btn">
           {{ store.getCategoryByRecipeId(recipe.id) }}
@@ -157,7 +156,7 @@ const toggleShowAll = () => {
 }
 
 .card__card:hover {
-  .card__link-wrapper {
+  .card__link {
     bottom: 14px;
     opacity: 1;
   }
@@ -209,7 +208,7 @@ const toggleShowAll = () => {
   font-size: 14px;
 }
 
-.card__link-wrapper {
+.card__link {
   display: flex;
   align-items: center;
   height: var(--height-button-m);
@@ -224,6 +223,9 @@ const toggleShowAll = () => {
   opacity: 0;
   cursor: pointer;
   user-select: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--color-black);
 
   svg {
     position: absolute;
@@ -235,16 +237,8 @@ const toggleShowAll = () => {
   }
 }
 
-.card__link-wrapper:hover {
-  .card__link {
+.card__link:hover {
     color: var(--color-yellow);
-  }
-}
-
-.card__link {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: var(--color-black);
 }
 
 .card__show-more {

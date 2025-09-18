@@ -6,7 +6,18 @@
       "image": "2",
       "servings": "2",
       "timePrep": "10 min",
-      "timeCook": "8 min"
+      "timeCook": "8 min",
+      "title": "A creamy and protein-packed start to your day.",
+      "desc": "This Avocado Toast with Poached Egg combines creamy avocado with a perfectly poached egg for a nutritious and satisfying breakfast. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum hendrerit lectus, eget gravida lorem sodales et. Nullam eu posuere tortor, vel consequat turpis. Pellentesque ac felis augue. Vivamus elementum odio in tellus imperdiet, sit amet imperdiet neque porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent sed neque ultricies, mattis libero eget, vulputate erat.",
+      "ingredients": [
+        "2 Slices Whole Grain Bread",
+        "1 Ripe Avocado",
+        "2 Large Eggs",
+        "1 Tablespoon Lemon Juice",
+        "1 Pinch Salt",
+        "1 Pinch Black Pepper"
+      ],
+      "directions": "Toast bread. Mash avocado with lemon juice, salt, and pepper; spread on toast. Poach eggs for 3-4 minutes and place on top. Serve immediately."
     },
     {
       "id": 2,
@@ -15,7 +26,17 @@
       "servings": "1",
       "timePrep": "5 min",
       "timeCook": "0 min",
-      "newest": true
+      "newest": true,
+      "title": "A quick and refreshing breakfast layered with flavor.",
+      "desc": "This Greek Yogurt Parfait is a delightful mix of creamy yogurt, crunchy granola, and sweet fruit, perfect for a busy morning. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "1 Cup Greek Yogurt",
+        "1/2 Cup Granola",
+        "1/2 Cup Mixed Berries",
+        "1 Tablespoon Honey",
+        "1 Teaspoon Chia Seeds"
+      ],
+      "directions": "Layer yogurt, granola, and berries in a glass or bowl. Drizzle with honey and sprinkle with chia seeds. Serve immediately."
     },
     {
       "id": 3,
@@ -23,7 +44,18 @@
       "image": "1",
       "servings": "4",
       "timePrep": "15 min",
-      "timeCook": "20 min"
+      "timeCook": "20 min",
+      "title": "Fluffy pancakes for a classic breakfast treat.",
+      "desc": "These Pancakes with Maple Syrup are light, fluffy, and perfect for a cozy weekend breakfast. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "1 Cup All-Purpose Flour",
+        "1 Cup Milk",
+        "1 Large Egg",
+        "2 Tablespoons Sugar",
+        "1 Teaspoon Baking Powder",
+        "1/4 Cup Maple Syrup"
+      ],
+      "directions": "Mix flour, milk, egg, sugar, and baking powder to form a batter. Pour batter onto a hot griddle, cook for 2-3 minutes per side. Serve with maple syrup."
     },
     {
       "id": 4,
@@ -31,7 +63,18 @@
       "image": "5",
       "servings": "1",
       "timePrep": "5 min",
-      "timeCook": "0 min"
+      "timeCook": "0 min",
+      "title": "A make-ahead breakfast for busy mornings.",
+      "desc": "These Overnight Oats are creamy, customizable, and ready to grab-and-go, perfect for a healthy start. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "1/2 Cup Rolled Oats",
+        "1/2 Cup Almond Milk",
+        "1/4 Cup Greek Yogurt",
+        "1 Tablespoon Honey",
+        "1/4 Cup Blueberries",
+        "1 Teaspoon Chia Seeds"
+      ],
+      "directions": "Combine oats, milk, yogurt, honey, and chia seeds in a jar. Stir, cover, and refrigerate overnight. Top with blueberries before serving."
     },
     {
       "id": 5,
@@ -40,7 +83,18 @@
       "servings": "2",
       "timePrep": "5 min",
       "timeCook": "10 min",
-      "newest": true
+      "newest": true,
+      "title": "A simple and savory breakfast with fresh herbs.",
+      "desc": "These Scrambled Eggs with Herbs are fluffy and flavorful, elevated by a touch of fresh chives and parsley. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "4 Large Eggs",
+        "2 Tablespoons Milk",
+        "1 Tablespoon Butter",
+        "1 Tablespoon Fresh Chives, Chopped",
+        "1 Tablespoon Fresh Parsley, Chopped",
+        "Salt and Pepper to Taste"
+      ],
+      "directions": "Whisk eggs with milk, salt, and pepper. Melt butter in a skillet, add eggs, and cook over low heat, stirring until set. Sprinkle with herbs and serve."
     },
     {
       "id": 6,
@@ -48,7 +102,18 @@
       "image": "2",
       "servings": "1",
       "timePrep": "10 min",
-      "timeCook": "0 min"
+      "timeCook": "0 min",
+      "title": "A vibrant and refreshing breakfast bowl.",
+      "desc": "This Smoothie Bowl is a colorful blend of fruits and yogurt, topped with crunchy granola and nuts. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "1 Frozen Banana",
+        "1/2 Cup Frozen Berries",
+        "1/2 Cup Greek Yogurt",
+        "1/4 Cup Almond Milk",
+        "2 Tablespoons Granola",
+        "1 Tablespoon Sliced Almonds"
+      ],
+      "directions": "Blend banana, berries, yogurt, and almond milk until smooth. Pour into a bowl, top with granola and almonds, and serve immediately."
     },
     {
       "id": 7,
@@ -56,7 +121,18 @@
       "image": "1",
       "servings": "3",
       "timePrep": "10 min",
-      "timeCook": "15 min"
+      "timeCook": "15 min",
+      "title": "A sweet and indulgent breakfast classic.",
+      "desc": "This French Toast is crispy on the outside, soft on the inside, and perfect with a dusting of powdered sugar. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "6 Slices Brioche Bread",
+        "2 Large Eggs",
+        "1/2 Cup Milk",
+        "1 Teaspoon Cinnamon",
+        "1 Tablespoon Butter",
+        "2 Tablespoons Powdered Sugar"
+      ],
+      "directions": "Whisk eggs, milk, and cinnamon. Dip bread in mixture. Melt butter in a skillet, cook bread for 2-3 minutes per side until golden. Dust with powdered sugar."
     },
     {
       "id": 8,
@@ -65,7 +141,17 @@
       "servings": "2",
       "timePrep": "5 min",
       "timeCook": "0 min",
-      "newest": true
+      "newest": true,
+      "title": "A creamy and nutritious breakfast treat.",
+      "desc": "This Chia Seed Pudding is a healthy and versatile option, perfect for prepping ahead and topping with your favorite fruits. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "1/4 Cup Chia Seeds",
+        "1 Cup Coconut Milk",
+        "1 Tablespoon Maple Syrup",
+        "1/2 Teaspoon Vanilla Extract",
+        "1/4 Cup Mango, Diced"
+      ],
+      "directions": "Mix chia seeds, coconut milk, maple syrup, and vanilla in a bowl. Refrigerate for at least 4 hours or overnight. Top with mango before serving."
     },
     {
       "id": 9,
@@ -73,7 +159,18 @@
       "image": "5",
       "servings": "2",
       "timePrep": "15 min",
-      "timeCook": "12 min"
+      "timeCook": "12 min",
+      "title": "A hearty and portable breakfast packed with flavor.",
+      "desc": "This Breakfast Burrito combines scrambled eggs, sausage, and veggies for a filling morning meal. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "2 Large Tortillas",
+        "3 Large Eggs",
+        "1/2 Cup Sausage, Cooked and Crumbled",
+        "1/4 Cup Cheddar Cheese, Shredded",
+        "1/4 Cup Bell Pepper, Diced",
+        "2 Tablespoons Salsa"
+      ],
+      "directions": "Scramble eggs with bell pepper. Layer eggs, sausage, cheese, and salsa in tortillas. Roll tightly, cook seam-side down in a skillet for 2-3 minutes, and serve."
     },
     {
       "id": 10,
@@ -81,7 +178,17 @@
       "image": "3",
       "servings": "1",
       "timePrep": "3 min",
-      "timeCook": "0 min"
+      "timeCook": "0 min",
+      "title": "A quick and crunchy breakfast with fresh fruit.",
+      "desc": "This Granola with Fresh Berries is a simple yet delicious way to start your day with a burst of flavor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "1/2 Cup Granola",
+        "1/2 Cup Greek Yogurt",
+        "1/4 Cup Strawberries, Sliced",
+        "1/4 Cup Blueberries",
+        "1 Tablespoon Honey"
+      ],
+      "directions": "Layer yogurt, granola, and berries in a bowl. Drizzle with honey and serve immediately."
     },
     {
       "id": 11,
@@ -90,7 +197,18 @@
       "servings": "2",
       "timePrep": "20 min",
       "timeCook": "15 min",
-      "newest": true
+      "newest": true,
+      "title": "A decadent brunch classic with creamy hollandaise.",
+      "desc": "Eggs Benedict features perfectly poached eggs, savory ham, and a rich hollandaise sauce, ideal for a special breakfast. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "2 English Muffins, Halved",
+        "4 Large Eggs",
+        "4 Slices Canadian Bacon",
+        "1/2 Cup Hollandaise Sauce",
+        "1 Tablespoon Butter",
+        "1 Teaspoon Fresh Chives, Chopped"
+      ],
+      "directions": "Toast muffins and cook bacon. Poach eggs for 3-4 minutes. Layer bacon and eggs on muffins, top with hollandaise, and garnish with chives."
     },
     {
       "id": 12,
@@ -98,7 +216,18 @@
       "image": "2",
       "servings": "8",
       "timePrep": "15 min",
-      "timeCook": "60 min"
+      "timeCook": "60 min",
+      "title": "A moist and sweet loaf for a cozy morning.",
+      "desc": "This Banana Bread is soft, flavorful, and perfect for breakfast or a mid-morning snack. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "3 Ripe Bananas, Mashed",
+        "1.5 Cups All-Purpose Flour",
+        "1/2 Cup Sugar",
+        "1/4 Cup Butter, Melted",
+        "2 Large Eggs",
+        "1 Teaspoon Baking Soda"
+      ],
+      "directions": "Preheat oven to 350°F. Mix bananas, sugar, butter, eggs, flour, and baking soda. Pour into a greased loaf pan and bake for 60 minutes until golden."
     }
   ],
   "Lunch": [
@@ -108,7 +237,18 @@
       "image": "3",
       "servings": "2",
       "timePrep": "15 min",
-      "timeCook": "10 min"
+      "timeCook": "10 min",
+      "title": "\"Pairs perfectly with a sweet sangria and a chatty brunch with long-time friends\".",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum hendrerit lectus, eget gravida lorem sodales et. Nullam eu posuere tortor, vel consequat turpis. Pellentesque ac felis augue. Vivamus elementum odio in tellus imperdiet, sit amet imperdiet neque porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent sed neque ultricies, mattis libero eget, vulputate erat. Mauris convallis neque et nisi ultricies, at sodales nulla congue. Nunc dictum non dui a sodales.\n\nIn tincidunt ante in leo aliquam gravida. Proin tempus molestie varius. Curabitur tempor velit sit amet augue venenatis commodo. Donec ante ipsum, lobortis a volutpat at, ullamcorper et purus. In mattis, neque id malesuada posuere, arcu diam aliquet sapien, in laoreet magna velit non neque. Fusce malesuada id lacus placerat molestie. Etiam imperdiet sed tortor eget accumsan. Vestibulum maximus turpis tempus, pretium turpis id, volutpat dolor. Pellentesque eget est placerat, mattis sem vel, placerat risus. Fusce lobortis aliquam blandit.\n\nNam pellentesque, erat et venenatis tincidunt, massa orci eleifend nulla, nec sollicitudin nisl ligula quis magna. Donec sollicitudin maximus ornare. Donec at tellus leo. Aenean fermentum, elit a pulvinar porta, ex lorem rhoncus nisi, non mollis ligula enim in felis. Nulla ultricies tempor sollicitudin. Integer efficitur maximus ligula ut vehicula. Sed eu gravida nibh, id auctor sapien. Phasellus scelerisque odio vel lorem sagittis posuere. Praesent eu magna sit amet ligula accumsan euismod non sit amet augue.",
+      "ingredients": [
+        "1 Seedless Watermelon, Cut Into 1 Inch Cubes",
+        "2 Pounds of Peeled and Deveined Cooked Shrimp",
+        "1 Large Cucumber, Thinly Sliced",
+        "1 Small Chopped Onion",
+        "1 Small Mandarin, Peeled and Sectioned",
+        "1/3 Cup Lemon Juice"
+      ],
+      "directions": "Combine and toss all the ingredients in a large bowl. Drizzle with oil and vinegar and refrigerate until cool."
     },
     {
       "id": 14,
@@ -117,7 +257,17 @@
       "servings": "1",
       "timePrep": "5 min",
       "timeCook": "8 min",
-      "newest": true
+      "newest": true,
+      "title": "A classic comfort food for a quick lunch break.",
+      "desc": "This Grilled Cheese Sandwich is crispy, gooey, and perfect for a fast, satisfying meal. Pair it with a bowl of tomato soup for a nostalgic experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "ingredients": [
+        "2 Slices White Bread",
+        "2 Slices Cheddar Cheese",
+        "1 Tablespoon Butter",
+        "1 Pinch Salt",
+        "1 Pinch Black Pepper"
+      ],
+      "directions": "Butter one side of each bread slice. Place cheese between unbuttered sides. Cook in a skillet over medium heat for 3-4 minutes per side until golden and melted."
     },
     {
       "id": 15,
@@ -125,7 +275,18 @@
       "image": "1",
       "servings": "2",
       "timePrep": "20 min",
-      "timeCook": "15 min"
+      "timeCook": "15 min",
+      "title": "A vibrant and nutritious bowl for a healthy lunch.",
+      "desc": "This Quinoa Bowl is packed with fresh veggies, protein-rich quinoa, and a tangy dressing, making it a wholesome and colorful option. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "1 Cup Quinoa, Cooked",
+        "1 Avocado, Sliced",
+        "1 Cup Cherry Tomatoes, Halved",
+        "1/2 Cup Black Beans",
+        "2 Tablespoons Lime Juice",
+        "2 Tablespoons Olive Oil"
+      ],
+      "directions": "Cook quinoa according to package instructions. Combine quinoa, avocado, tomatoes, and beans in a bowl. Drizzle with lime juice and olive oil, then toss to combine."
     },
     {
       "id": 16,
@@ -133,7 +294,18 @@
       "image": "4",
       "servings": "1",
       "timePrep": "10 min",
-      "timeCook": "0 min"
+      "timeCook": "0 min",
+      "title": "A portable and flavorful wrap for lunch on the go.",
+      "desc": "This Chicken Wrap combines tender chicken, crisp veggies, and a creamy spread for a quick and delicious meal. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "1 Large Tortilla",
+        "1 Cup Cooked Chicken, Shredded",
+        "1/2 Cup Lettuce, Shredded",
+        "1/4 Cup Tomato, Diced",
+        "2 Tablespoons Ranch Dressing",
+        "1/4 Cup Cheddar Cheese, Shredded"
+      ],
+      "directions": "Lay tortilla flat, spread ranch dressing, then layer chicken, lettuce, tomato, and cheese. Roll tightly, slice in half, and serve immediately."
     },
     {
       "id": 17,
@@ -142,7 +314,18 @@
       "servings": "4",
       "timePrep": "10 min",
       "timeCook": "25 min",
-      "newest": true
+      "newest": true,
+      "title": "A warm and comforting soup for a cozy lunch.",
+      "desc": "This Tomato Basil Soup is rich, velvety, and infused with fresh basil, perfect for pairing with a grilled cheese sandwich. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "1 Can (28 oz) Crushed Tomatoes",
+        "1 Cup Heavy Cream",
+        "1 Onion, Chopped",
+        "2 Cloves Garlic, Minced",
+        "1/4 Cup Fresh Basil, Chopped",
+        "2 Tablespoons Olive Oil"
+      ],
+      "directions": "Sauté onion and garlic in olive oil. Add tomatoes and simmer for 15 minutes. Blend until smooth, stir in cream and basil, and heat through."
     },
     {
       "id": 18,
@@ -150,7 +333,18 @@
       "image": "3",
       "servings": "2",
       "timePrep": "12 min",
-      "timeCook": "0 min"
+      "timeCook": "0 min",
+      "title": "A fresh and zesty pita stuffed with Mediterranean flavors.",
+      "desc": "This Mediterranean Pita is filled with creamy hummus, crisp veggies, and tangy feta for a light yet satisfying lunch. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "2 Pita Breads",
+        "1/2 Cup Hummus",
+        "1/2 Cup Cucumber, Sliced",
+        "1/4 Cup Feta Cheese, Crumbled",
+        "1/4 Cup Red Onion, Sliced",
+        "1/4 Cup Kalamata Olives, Pitted"
+      ],
+      "directions": "Spread hummus inside pita halves. Add cucumber, feta, onion, and olives. Serve immediately or wrap for a portable lunch."
     },
     {
       "id": 19,
@@ -158,7 +352,18 @@
       "image": "5",
       "servings": "3",
       "timePrep": "15 min",
-      "timeCook": "5 min"
+      "timeCook": "5 min",
+      "title": "A refreshing noodle salad with a zesty Asian dressing.",
+      "desc": "This Asian Noodle Salad combines chewy noodles, crisp vegetables, and a tangy sesame dressing for a vibrant lunch option. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "8 oz Rice Noodles",
+        "1 Carrot, Shredded",
+        "1/2 Cup Red Bell Pepper, Sliced",
+        "1/4 Cup Green Onions, Chopped",
+        "2 Tablespoons Sesame Oil",
+        "2 Tablespoons Soy Sauce"
+      ],
+      "directions": "Cook noodles according to package. Toss with carrot, bell pepper, green onions, sesame oil, and soy sauce. Chill for 10 minutes before serving."
     },
     {
       "id": 20,
@@ -166,7 +371,18 @@
       "image": "1",
       "servings": "1",
       "timePrep": "8 min",
-      "timeCook": "3 min"
+      "timeCook": "3 min",
+      "title": "A stacked sandwich with classic deli flavors.",
+      "desc": "This Turkey Club Sandwich layers tender turkey, crispy bacon, and fresh veggies for a hearty lunch. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "3 Slices Whole Wheat Bread",
+        "4 Slices Turkey Breast",
+        "2 Slices Bacon, Cooked",
+        "1 Slice Tomato",
+        "1 Leaf Lettuce",
+        "2 Tablespoons Mayonnaise"
+      ],
+      "directions": "Toast bread. Spread mayonnaise on one side of each slice. Layer turkey, bacon, tomato, and lettuce between slices. Cut diagonally and secure with toothpicks."
     },
     {
       "id": 21,
@@ -175,7 +391,18 @@
       "servings": "2",
       "timePrep": "10 min",
       "timeCook": "0 min",
-      "newest": true
+      "newest": true,
+      "title": "A simple and elegant Italian salad for a light lunch.",
+      "desc": "This Caprese Salad showcases ripe tomatoes, creamy mozzarella, and fragrant basil, drizzled with balsamic glaze. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "2 Large Tomatoes, Sliced",
+        "8 oz Fresh Mozzarella, Sliced",
+        "1/4 Cup Fresh Basil Leaves",
+        "2 Tablespoons Olive Oil",
+        "1 Tablespoon Balsamic Glaze",
+        "Salt and Pepper to Taste"
+      ],
+      "directions": "Arrange tomato and mozzarella slices on a plate, alternating with basil leaves. Drizzle with olive oil and balsamic glaze. Season with salt and pepper."
     },
     {
       "id": 22,
@@ -183,7 +410,18 @@
       "image": "2",
       "servings": "3",
       "timePrep": "15 min",
-      "timeCook": "12 min"
+      "timeCook": "12 min",
+      "title": "A coastal-inspired lunch with bold flavors.",
+      "desc": "These Fish Tacos feature crispy fish, fresh slaw, and a zesty sauce, perfect for a sunny day. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "1 Pound White Fish (e.g., Cod), Cut into Strips",
+        "6 Small Corn Tortillas",
+        "1 Cup Cabbage, Shredded",
+        "1/4 Cup Sour Cream",
+        "2 Tablespoons Lime Juice",
+        "1/2 Cup Flour"
+      ],
+      "directions": "Coat fish in flour and fry until crispy. Mix sour cream and lime juice for sauce. Warm tortillas, add fish, cabbage, and drizzle with sauce."
     },
     {
       "id": 23,
@@ -192,7 +430,18 @@
       "servings": "4",
       "timePrep": "10 min",
       "timeCook": "30 min",
-      "newest": true
+      "newest": true,
+      "title": "A creamy and earthy risotto for a comforting lunch.",
+      "desc": "This Mushroom Risotto is rich and creamy, with deep umami flavors from fresh mushrooms. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "1 Cup Arborio Rice",
+        "2 Cups Mushrooms, Sliced",
+        "4 Cups Vegetable Broth",
+        "1/2 Cup Parmesan Cheese, Grated",
+        "1 Onion, Chopped",
+        "2 Tablespoons Butter"
+      ],
+      "directions": "Sauté onion and mushrooms in butter. Add rice, then gradually stir in broth, cooking until creamy. Stir in Parmesan and serve warm."
     },
     {
       "id": 24,
@@ -200,7 +449,18 @@
       "image": "5",
       "servings": "2",
       "timePrep": "12 min",
-      "timeCook": "10 min"
+      "timeCook": "10 min",
+      "title": "A hearty and flavorful plant-based burger.",
+      "desc": "This Veggie Burger is packed with wholesome ingredients and bold spices, perfect for a satisfying vegetarian lunch. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "2 Veggie Burger Patties",
+        "2 Whole Wheat Buns",
+        "1/4 Cup Lettuce, Shredded",
+        "1 Slice Tomato",
+        "2 Tablespoons Ketchup",
+        "1 Tablespoon Olive Oil"
+      ],
+      "directions": "Cook patties in olive oil over medium heat for 4-5 minutes per side. Toast buns, then assemble with lettuce, tomato, and ketchup."
     }
   ],
   "Dinner": [
@@ -211,7 +471,18 @@
       "servings": "4",
       "timePrep": "10 min",
       "timeCook": "15 min",
-      "newest": true
+      "newest": true,
+      "title": "A light and zesty dish perfect for a summer evening.",
+      "desc": "This Grilled Salmon with Lemon is a refreshing and healthy option that brings out the natural flavors of the fish. The bright lemon zest and herbs create a vibrant dish that pairs beautifully with a crisp white wine. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+      "ingredients": [
+        "4 Salmon Fillets",
+        "2 Lemons, Juiced and Zested",
+        "2 Tablespoons Olive Oil",
+        "1 Teaspoon Fresh Dill, Chopped",
+        "1 Clove Garlic, Minced",
+        "Salt and Pepper to Taste"
+      ],
+      "directions": "Preheat grill to medium heat. Mix lemon juice, zest, olive oil, dill, and garlic in a bowl. Brush salmon with the mixture, season with salt and pepper, and grill for 6-8 minutes per side. Serve with a lemon wedge."
     },
     {
       "id": 26,
@@ -219,7 +490,18 @@
       "image": "1",
       "servings": "4",
       "timePrep": "20 min",
-      "timeCook": "12 min"
+      "timeCook": "12 min",
+      "title": "A quick and savory dish for a busy weeknight.",
+      "desc": "This Beef Stir Fry is packed with colorful vegetables and tender beef strips, coated in a rich soy-based sauce. Perfect for a fast yet flavorful dinner. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "ingredients": [
+        "1 Pound Beef Sirloin, Thinly Sliced",
+        "1 Red Bell Pepper, Sliced",
+        "1 Broccoli Head, Cut into Florets",
+        "2 Tablespoons Soy Sauce",
+        "1 Tablespoon Sesame Oil",
+        "1 Teaspoon Ginger, Grated"
+      ],
+      "directions": "Heat sesame oil in a wok over high heat. Add beef and stir-fry for 3-4 minutes. Add vegetables, soy sauce, and ginger, cooking for another 5-7 minutes until tender. Serve hot with rice."
     },
     {
       "id": 27,
@@ -227,7 +509,18 @@
       "image": "3",
       "servings": "4",
       "timePrep": "25 min",
-      "timeCook": "30 min"
+      "timeCook": "30 min",
+      "title": "A classic Italian comfort food with a crispy twist.",
+      "desc": "Chicken Parmesan is a beloved dish featuring breaded chicken cutlets topped with marinara sauce and melted mozzarella. Perfect for a cozy family dinner. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+      "ingredients": [
+        "4 Chicken Breasts, Pounded Thin",
+        "1 Cup Breadcrumbs",
+        "1 Cup Marinara Sauce",
+        "1 Cup Mozzarella Cheese, Shredded",
+        "1/4 Cup Parmesan Cheese, Grated",
+        "2 Eggs, Beaten"
+      ],
+      "directions": "Preheat oven to 400°F. Dip chicken in eggs, then breadcrumbs. Fry in a skillet until golden, then top with marinara and cheeses. Bake for 20 minutes until cheese is bubbly."
     },
     {
       "id": 28,
@@ -236,7 +529,18 @@
       "servings": "6",
       "timePrep": "30 min",
       "timeCook": "45 min",
-      "newest": true
+      "newest": true,
+      "title": "A hearty vegetarian dish for a crowd-pleasing meal.",
+      "desc": "This Vegetable Lasagna layers fresh vegetables, creamy ricotta, and rich marinara for a satisfying meat-free dinner. Ideal for gatherings. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "12 Lasagna Noodles",
+        "2 Cups Ricotta Cheese",
+        "2 Cups Spinach, Chopped",
+        "1 Zucchini, Sliced",
+        "2 Cups Marinara Sauce",
+        "1 Cup Mozzarella Cheese, Shredded"
+      ],
+      "directions": "Cook noodles according to package. Layer noodles, ricotta, spinach, zucchini, and marinara in a baking dish. Top with mozzarella and bake at 375°F for 45 minutes."
     },
     {
       "id": 29,
@@ -244,7 +548,18 @@
       "image": "5",
       "servings": "5",
       "timePrep": "15 min",
-      "timeCook": "25 min"
+      "timeCook": "25 min",
+      "title": "A succulent roast with a tangy glaze.",
+      "desc": "This Pork Tenderloin is roasted to perfection with a sweet and tangy glaze, making it a versatile main dish for any occasion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "1 Pork Tenderloin (about 1.5 lbs)",
+        "2 Tablespoons Honey",
+        "1 Tablespoon Dijon Mustard",
+        "1 Teaspoon Rosemary, Chopped",
+        "2 Cloves Garlic, Minced",
+        "Salt and Pepper to Taste"
+      ],
+      "directions": "Preheat oven to 400°F. Mix honey, mustard, rosemary, and garlic. Rub over pork, season with salt and pepper, and roast for 20-25 minutes until internal temperature is 145°F."
     },
     {
       "id": 30,
@@ -252,7 +567,18 @@
       "image": "1",
       "servings": "4",
       "timePrep": "15 min",
-      "timeCook": "20 min"
+      "timeCook": "20 min",
+      "title": "A creamy seafood pasta for a quick gourmet meal.",
+      "desc": "This Shrimp Pasta combines succulent shrimp with a creamy garlic sauce, perfect for a special weeknight dinner. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "12 oz Spaghetti",
+        "1 Pound Shrimp, Peeled and Deveined",
+        "1 Cup Heavy Cream",
+        "2 Cloves Garlic, Minced",
+        "1/4 Cup Parmesan Cheese, Grated",
+        "2 Tablespoons Olive Oil"
+      ],
+      "directions": "Cook spaghetti according to package. Sauté garlic and shrimp in olive oil, add cream, and simmer. Toss with pasta and Parmesan, then serve immediately."
     },
     {
       "id": 31,
@@ -261,7 +587,18 @@
       "servings": "4",
       "timePrep": "20 min",
       "timeCook": "35 min",
-      "newest": true
+      "newest": true,
+      "title": "Colorful peppers stuffed with savory goodness.",
+      "desc": "These Stuffed Bell Peppers are filled with a hearty mixture of rice, beef, and spices, baked to perfection. Ideal for a wholesome dinner. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "4 Bell Peppers, Tops Removed",
+        "1 Pound Ground Beef",
+        "1 Cup Cooked Rice",
+        "1 Cup Tomato Sauce",
+        "1 Teaspoon Italian Seasoning",
+        "1/2 Cup Cheddar Cheese, Shredded"
+      ],
+      "directions": "Preheat oven to 375°F. Mix beef, rice, tomato sauce, and seasoning. Stuff peppers, top with cheese, and bake for 35 minutes until peppers are tender."
     },
     {
       "id": 32,
@@ -269,7 +606,18 @@
       "image": "3",
       "servings": "6",
       "timePrep": "25 min",
-      "timeCook": "40 min"
+      "timeCook": "40 min",
+      "title": "A fragrant and spicy dish for curry lovers.",
+      "desc": "This Lamb Curry is rich with aromatic spices and tender lamb, perfect for a warming meal. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "2 Pounds Lamb, Cubed",
+        "1 Can Coconut Milk",
+        "2 Tablespoons Curry Powder",
+        "1 Onion, Chopped",
+        "2 Cloves Garlic, Minced",
+        "1 Tablespoon Ginger, Grated"
+      ],
+      "directions": "Sauté onion, garlic, and ginger. Add lamb and curry powder, cook until browned. Pour in coconut milk, simmer for 40 minutes, and serve with rice."
     },
     {
       "id": 33,
@@ -277,7 +625,18 @@
       "image": "2",
       "servings": "2",
       "timePrep": "15 min",
-      "timeCook": "18 min"
+      "timeCook": "18 min",
+      "title": "A sophisticated dish with a citrusy flair.",
+      "desc": "Duck Breast with Orange combines crispy-skinned duck with a tangy orange glaze for an elegant dinner. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "2 Duck Breasts",
+        "1 Orange, Juiced and Zested",
+        "2 Tablespoons Honey",
+        "1 Tablespoon Soy Sauce",
+        "1 Teaspoon Thyme, Chopped",
+        "Salt and Pepper to Taste"
+      ],
+      "directions": "Score duck skin, season with salt and pepper. Sear skin-side down for 7 minutes, flip, and cook for 5 more. Mix orange juice, zest, honey, soy sauce, and thyme; pour over duck and simmer briefly."
     },
     {
       "id": 34,
@@ -286,7 +645,18 @@
       "servings": "8",
       "timePrep": "45 min",
       "timeCook": "50 min",
-      "newest": true
+      "newest": true,
+      "title": "A rich Mediterranean layered dish.",
+      "desc": "Eggplant Moussaka is a flavorful casserole with layers of eggplant, spiced meat, and creamy béchamel. Perfect for a large gathering. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "ingredients": [
+        "2 Large Eggplants, Sliced",
+        "1 Pound Ground Lamb",
+        "1 Can Crushed Tomatoes",
+        "2 Cups Béchamel Sauce",
+        "1 Onion, Chopped",
+        "1 Teaspoon Cinnamon"
+      ],
+      "directions": "Grill eggplant slices. Cook lamb with onion and cinnamon, add tomatoes. Layer eggplant, meat, and béchamel in a dish. Bake at 375°F for 50 minutes."
     },
     {
       "id": 35,
@@ -294,7 +664,18 @@
       "image": "1",
       "servings": "4",
       "timePrep": "20 min",
-      "timeCook": "25 min"
+      "timeCook": "25 min",
+      "title": "A vibrant and spicy Thai classic.",
+      "desc": "This Thai Green Curry is bursting with bold flavors from green curry paste and creamy coconut milk. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "ingredients": [
+        "1 Pound Chicken Breast, Sliced",
+        "1 Can Coconut Milk",
+        "2 Tablespoons Green Curry Paste",
+        "1 Cup Bamboo Shoots",
+        "1 Red Bell Pepper, Sliced",
+        "1 Tablespoon Fish Sauce"
+      ],
+      "directions": "Sauté curry paste, add chicken and cook until browned. Pour in coconut milk, add bamboo shoots, pepper, and fish sauce. Simmer for 20 minutes and serve with jasmine rice."
     },
     {
       "id": 36,
@@ -303,7 +684,18 @@
       "servings": "6",
       "timePrep": "30 min",
       "timeCook": "120 min",
-      "newest": true
+      "newest": true,
+      "title": "Sticky and smoky ribs for a hearty feast.",
+      "desc": "These BBQ Ribs are slow-cooked to tender perfection with a smoky, tangy sauce. Perfect for a weekend barbecue. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "ingredients": [
+        "2 Racks Pork Ribs",
+        "1 Cup BBQ Sauce",
+        "2 Tablespoons Brown Sugar",
+        "1 Tablespoon Smoked Paprika",
+        "1 Teaspoon Garlic Powder",
+        "Salt and Pepper to Taste"
+      ],
+      "directions": "Rub ribs with sugar, paprika, garlic powder, salt, and pepper. Bake at 275°F for 2 hours, basting with BBQ sauce every 30 minutes. Finish on grill for 5 minutes per side."
     }
   ]
 }

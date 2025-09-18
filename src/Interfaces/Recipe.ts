@@ -6,6 +6,10 @@ export interface Recipe {
   timePrep: string
   timeCook: string
   newest?: boolean
+  title?: string
+  desc?: string
+  ingredients?: []
+  directions?: string
 }
 
 export interface RecipeDatabase {
