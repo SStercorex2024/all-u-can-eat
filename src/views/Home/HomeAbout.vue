@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { useRecipsStore } from '@/stores/RecipsStore.ts'
+import type { RecipeCategory } from '@/Interfaces/Recipe.ts'
+
+const store = useRecipsStore()
+
 const listLinks = ['Breakfast', 'Dessert', 'Dinner', 'Lunch', 'Snack', 'Vegan']
 </script>
 
@@ -19,7 +24,7 @@ const listLinks = ['Breakfast', 'Dessert', 'Dinner', 'Lunch', 'Snack', 'Vegan']
             Sharon is a passionate home chef with a focus on simplicity. She crafts easy-to-follow
             recipes that transform everyday ingredients into delicious creations.
           </p>
-          <a class="about-banner__link" href="/about">About Me</a>
+          <RouterLink class="about-banner__link" :to="{ name: 'about' }">About Me </RouterLink>
         </div>
       </div>
     </div>
@@ -34,9 +39,12 @@ const listLinks = ['Breakfast', 'Dessert', 'Dinner', 'Lunch', 'Snack', 'Vegan']
       <div class="container about-banner__footer-container">
         <ul class="about-banner__footer-list">
           <li class="about-banner__footer-item" v-for="link in listLinks" :key="link">
-            <a :href="`/category/${link.toLowerCase()}`" class="about-banner__footer-link"
+            <RouterLink
+              @click="store.activeRecipe = link as RecipeCategory"
+              :to="{ name: link.toLowerCase() }"
+              class="about-banner__footer-link"
               >{{ link }}
-            </a>
+            </RouterLink>
           </li>
         </ul>
         <img
@@ -135,6 +143,7 @@ const listLinks = ['Breakfast', 'Dessert', 'Dinner', 'Lunch', 'Snack', 'Vegan']
   font-weight: 700;
   color: var(--color-white);
 }
+
 .about-banner__footer-container {
   display: flex;
   column-gap: 40px;
@@ -172,55 +181,67 @@ const listLinks = ['Breakfast', 'Dessert', 'Dinner', 'Lunch', 'Snack', 'Vegan']
     align-items: center;
     justify-content: center;
   }
+
   .about-banner__head-image {
     margin-block: -60px 0;
   }
+
   .about-banner__middle-container {
     padding-block: 50px;
   }
+
   .about-banner__middle-tile {
     font-size: 42px;
   }
 }
+
 @media (max-width: 962px) {
   .about-banner__footer-img {
     max-width: 340px;
     margin-top: -123px;
   }
+
   .about-banner__footer-list {
     padding-top: 40px;
   }
+
   .about-banner__footer-link {
     font-size: 32px;
   }
 }
+
 @media (max-width: 721px) {
   .about-banner__head-image {
     width: 100%;
   }
+
   .about-banner__middle-container {
     padding-bottom: 130px;
   }
+
   .about-banner__footer-img {
     order: -1;
   }
 }
+
 @media (max-width: 666px) {
   .about-banner__middle-container {
     text-align: center;
     padding-bottom: 140px;
   }
+
   .about-banner__middle-tile {
     width: 100%;
   }
+
   .about-banner__footer-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .about-banner__footer-list {
     justify-content: center;
   }
 }
-
 </style>

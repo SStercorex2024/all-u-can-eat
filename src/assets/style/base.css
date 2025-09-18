@@ -32,9 +32,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
   background-color: var(--color-beige);
   margin: 0;
 
@@ -43,6 +40,13 @@ body {
   font-style: normal;
   font-size: 16px;
   color: var(--color-black);
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 main {

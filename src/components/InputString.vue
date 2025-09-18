@@ -33,4 +33,8 @@ input::placeholder {
   opacity: 0.75;
   color: var(--color-black);
 }
+
+input {
+  caret-color: black;
+}
 </style>

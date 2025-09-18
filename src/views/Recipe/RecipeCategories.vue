@@ -18,7 +18,7 @@ const listLinks: RecipeCategory[] = [
   'Dessert',
   'Vegan',
   'Vegetarian',
-  'Pescatarian',
+  'Pescatarian'
 ]
 
 </script>
@@ -81,6 +81,7 @@ const listLinks: RecipeCategory[] = [
   color: var(--color-gray);
   font-weight: 500;
   transition: var(--transition-duration);
+  text-transform: uppercase;
 }
 
 .recipe__item:hover {
@@ -104,6 +105,7 @@ const listLinks: RecipeCategory[] = [
   .recipe-head {
     padding-block: 30px;
   }
+
   .recipe-head__title {
     font-size: 48px;
   }

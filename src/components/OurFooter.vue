@@ -7,10 +7,12 @@ import Pinterest from '@/components/icons/Pinterest.vue'
 import Facebook from '@/components/icons/Facebook.vue'
 import { watch } from 'vue'
 import { useEmailStore } from '@/stores/EmailStore.ts'
+import { useRoute } from 'vue-router'
 
 const pages = ['About', 'Blog', 'Contact']
 
 const store = useEmailStore()
+const route = useRoute()
 
 watch(
   () => store.emailValue,
@@ -58,8 +60,8 @@ watch(
               <li v-for="page in pages" :key="page">
                 <RouterLink
                   class="footer__body-page"
-                  active-class="footer__body-page-active"
-                  :to="{ name: page.toLowerCase() }"
+                  :to="{name : page.toLowerCase()}"
+                  active-class="active"
                 >
                   {{ page }}
                 </RouterLink>
@@ -214,7 +216,7 @@ watch(
   font-weight: 700;
 }
 
-.footer__body-page-active {
+.footer__body-page.active {
   opacity: 0.75;
 }
 
@@ -239,19 +241,23 @@ watch(
     color: var(--color-white);
   }
 }
+
 @media (max-width: 864px) {
   .footer__head-title {
     font-size: 38px;
   }
 }
+
 @media (max-width: 706px) {
   .footer__head-title {
     text-align: center;
   }
+
   .footer__head-content {
     gap: 40px;
     flex-direction: column;
   }
+
   .footer__body-row {
     flex-direction: column;
     row-gap: 20px;
