@@ -1,5 +1,9 @@
 import { defineStore } from 'pinia'
-import type { MealType, Recipe, RecipeDatabase } from '@/Interfaces/Recipe.ts'
+import type {
+  Recipe,
+  RecipeCategory,
+  RecipeDatabase
+} from '@/Interfaces/Recipe.ts'
 import { ref, computed } from 'vue'
 
 export const useRecipsStore = defineStore('recips', () => {
@@ -10,7 +14,7 @@ export const useRecipsStore = defineStore('recips', () => {
     recips.value = await response.json()
   }
 
-  function getRecipesByCategory(category: MealType): Recipe[] {
+  function getRecipesByCategory(category: RecipeCategory): Recipe[] {
     if (!recips.value) return []
     return recips.value[category] || []
   }

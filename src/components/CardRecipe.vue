@@ -34,106 +34,109 @@ const toggleShowAll = () => {
 </script>
 
 <template>
-  <ul class="card__list">
-    <li class="card__card" v-for="recipe in displayedItems" :key="recipe.id">
-      <div class="card__image">
-        <img
-          :src="`./src/assets/images/rec-l/${recipe.image}.jpg`"
-          :alt="recipe.name"
-          loading="lazy"
-        />
-        <div class="card__link-wrapper">
-          <RouterLink
-            class="card__link"
-            :to="{ name: store.getCategoryByRecipeId(recipe.id).toLowerCase() }"
-            >View recipe
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </span>
-          </RouterLink>
+  <div v-if="allItems.length >= 1">
+    <ul class="card__list">
+      <li class="card__card" v-for="recipe in displayedItems" :key="recipe.id">
+        <div class="card__image">
+          <img
+            :src="`./src/assets/images/rec-l/${recipe.image}.jpg`"
+            :alt="recipe.name"
+            loading="lazy"
+          />
+          <div class="card__link-wrapper">
+            <RouterLink
+              class="card__link"
+              :to="{ name: store.getCategoryByRecipeId(recipe.id).toLowerCase() }"
+              >View recipe
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+            </RouterLink>
+          </div>
         </div>
-      </div>
-      <span class="card__name white-btn">
-        {{ store.getCategoryByRecipeId(recipe.id) }}
-      </span>
-      <ul class="card__extra">
-        <li class="card__extra-item">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-            />
-          </svg>
-          <p class="card__extra-title">
-            {{ `${recipe.servings} ervings` }}
-          </p>
-        </li>
-        <li class="card__extra-item">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            />
-          </svg>
-          <p class="card__extra-title">{{ recipe.timePrep }} prep</p>
-        </li>
-        <li class="card__extra-item">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            />
-          </svg>
-          <p class="card__extra-title">{{ recipe.timeCook }} cook</p>
-        </li>
-      </ul>
-      <h3 class="card__title">
-        {{ recipe.name }}
-      </h3>
-    </li>
-  </ul>
-  <div class="card__show-more" v-if="hasMoreItems">
-    <button @click="toggleShowAll" class="card__show-more-btn green-btn">
-      {{ showAll ? 'View less recipes' : 'View all recipes' }}
-    </button>
+        <span class="card__name white-btn">
+          {{ store.getCategoryByRecipeId(recipe.id) }}
+        </span>
+        <ul class="card__extra">
+          <li class="card__extra-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <p class="card__extra-title">
+              {{ `${recipe.servings} ervings` }}
+            </p>
+          </li>
+          <li class="card__extra-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+            <p class="card__extra-title">{{ recipe.timePrep }} prep</p>
+          </li>
+          <li class="card__extra-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+            <p class="card__extra-title">{{ recipe.timeCook }} cook</p>
+          </li>
+        </ul>
+        <h3 class="card__title">
+          {{ recipe.name }}
+        </h3>
+      </li>
+    </ul>
+    <div class="card__show-more" v-if="hasMoreItems">
+      <button @click="toggleShowAll" class="card__show-more-btn green-btn">
+        {{ showAll ? 'View less recipes' : 'View all recipes' }}
+      </button>
+    </div>
   </div>
+  <div class="card__not-found" v-else>Category not found</div>
 </template>
 
 <style scoped>
@@ -253,6 +256,14 @@ const toggleShowAll = () => {
 .card__show-more-btn {
   text-transform: uppercase;
   padding-inline: 12px;
+}
+
+.card__not-found {
+  text-align: center;
+  color: var(--color-gray);
+  font-size: 64px;
+  font-weight: 500;
+  padding-block: 60px;
 }
 
 @media (max-width: 1240px) {

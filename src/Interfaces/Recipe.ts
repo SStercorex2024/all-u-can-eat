@@ -12,6 +12,20 @@ export interface RecipeDatabase {
   Breakfast: Recipe[]
   Lunch: Recipe[]
   Dinner: Recipe[]
+  Snack?: Recipe[]
+  Dessert?: Recipe[]
+  Vegan?: Recipe[]
+  Vegetarian?: Recipe[]
+  Pescatarian?: Recipe[]
 }
 
-export type MealType = 'Breakfast' | 'Lunch' | 'Dinner'
+export type RecipeCategory =
+  | 'Breakfast'
+  | 'Lunch'
+  | 'Dinner'
+  | 'Snack'
+  | 'Dessert'
+  | 'Vegan'
+  | 'Vegetarian'
+  | 'Pescatarian'
+

@@ -82,7 +82,7 @@ watch(modalMenuIsOpen, (isOpen) => {
             v-for="item in modalItems[0].categoriesItems"
             :key="item"
           >
-            <RouterLink class="modal__categories-link" :to="item.toLocaleLowerCase">
+            <RouterLink class="modal__categories-link" :to="item.toLocaleLowerCase()">
               {{ item }}
             </RouterLink>
           </li>
@@ -92,7 +92,7 @@ watch(modalMenuIsOpen, (isOpen) => {
         </p>
         <ul class="modal__link-list">
           <li class="modal__link-item" v-for="item in modalItems[1].linksItems" :key="item">
-            <RouterLink class="modal__link-link" :to="item.toLocaleLowerCase">
+            <RouterLink class="modal__link-link" :to="item.toLowerCase()">
               {{ item }}
             </RouterLink>
           </li>
@@ -210,6 +210,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .modal__categories-list {
@@ -229,6 +230,10 @@ header {
 .modal__link-title,
 .modal__link-link {
   color: var(--color-beige);
+}
+
+.modal__link-title {
+  margin-bottom: 20px;
 }
 
 .modal__categories-link:hover,
@@ -259,6 +264,7 @@ header {
 @media (max-width: 650px) {
   .modal__menu {
     width: 100%;
+    height: 100vh;
   }
 
   .modal__categories-list,
