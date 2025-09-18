@@ -4,13 +4,15 @@ import BurgerInactive from '@/components/icons/BurgerInactive.vue'
 import Ex from '@/components/icons/Ex.vue'
 import { ref, watch } from 'vue'
 import SearchButton from '@/components/SearchButton.vue'
+import { useRecipsStore } from '@/stores/RecipsStore.ts'
+import type { RecipeCategory } from '@/Interfaces/Recipe.ts'
 
 defineOptions({
   name: 'OurHeader',
 })
 
 const modalMenuIsOpen = ref(false)
-
+const store = useRecipsStore()
 const modalItems = [
   {
     nameCategories: 'categories',
@@ -27,7 +29,7 @@ function toggleModal() {
 }
 
 watch(modalMenuIsOpen, (isOpen) => {
-  if(isOpen) {
+  if (isOpen) {
     document.body.style.overflow = 'hidden'
   } else {
     document.body.style.overflow = ''
@@ -82,7 +84,11 @@ watch(modalMenuIsOpen, (isOpen) => {
             v-for="item in modalItems[0].categoriesItems"
             :key="item"
           >
-            <RouterLink class="modal__categories-link" :to="item.toLocaleLowerCase()">
+            <RouterLink
+              @click="store.activeRecipe = item as RecipeCategory; modalMenuIsOpen = false"
+              class="modal__categories-link"
+              :to="item.toLocaleLowerCase()"
+            >
               {{ item }}
             </RouterLink>
           </li>
@@ -92,7 +98,11 @@ watch(modalMenuIsOpen, (isOpen) => {
         </p>
         <ul class="modal__link-list">
           <li class="modal__link-item" v-for="item in modalItems[1].linksItems" :key="item">
-            <RouterLink class="modal__link-link" :to="item.toLowerCase()">
+            <RouterLink
+              @click="store.activeRecipe = item as RecipeCategory; modalMenuIsOpen = false"
+              class="modal__link-link"
+              :to="item.toLowerCase()"
+            >
               {{ item }}
             </RouterLink>
           </li>

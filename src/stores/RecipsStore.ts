@@ -8,6 +8,7 @@ import { ref, computed } from 'vue'
 
 export const useRecipsStore = defineStore('recips', () => {
   const recips = ref<RecipeDatabase>()
+  const activeRecipe = ref<RecipeCategory>('Breakfast')
 
   async function fetchRecipes() {
     const response = await fetch('./bd.json')
@@ -44,5 +45,6 @@ export const useRecipsStore = defineStore('recips', () => {
     allCategory,
     getCategoryByRecipeId,
     allNewesRecipes,
+    activeRecipe
   }
 })

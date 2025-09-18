@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 import CardRecipe from '@/components/CardRecipe.vue'
 import { useRecipsStore } from '@/stores/RecipsStore.ts'
 import type { RecipeCategory } from '@/Interfaces/Recipe.ts'
@@ -21,21 +21,20 @@ const listLinks: RecipeCategory[] = [
   'Pescatarian',
 ]
 
-const activeRecipe = ref<RecipeCategory>(listLinks[0])
 </script>
 
 <template>
   <div class="recipe-head">
     <div class="container">
-      <h1 class="recipe-head__title">{{ activeRecipe }}</h1>
+      <h1 class="recipe-head__title">{{ store.activeRecipe }}</h1>
     </div>
   </div>
   <div class="recipe__row">
     <div class="container">
       <ul class="recipe__list">
         <li
-          @click="activeRecipe = link"
-          :class="[{ active: activeRecipe === link }, 'recipe__item']"
+          @click="store.activeRecipe = link"
+          :class="[{ active: store.activeRecipe === link }, 'recipe__item']"
           v-for="link in listLinks"
           :key="link"
         >
@@ -45,7 +44,7 @@ const activeRecipe = ref<RecipeCategory>(listLinks[0])
     </div>
   </div>
   <div class="container recipe-body">
-    <CardRecipe :all-items="store.getRecipesByCategory(activeRecipe)" />
+    <CardRecipe :all-items="store.getRecipesByCategory(store.activeRecipe)" />
   </div>
 </template>
 

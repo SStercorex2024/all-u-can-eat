@@ -43,6 +43,31 @@ const router = createRouter({
           name: 'dinner',
           component: () => import('@/views/Recipe/RecipeCategories.vue'),
         },
+        {
+          path: '/snack',
+          name: 'snack',
+          component: () => import('@/views/Recipe/RecipeCategories.vue'),
+        },
+        {
+          path: '/dessert',
+          name: 'dessert',
+          component: () => import('@/views/Recipe/RecipeCategories.vue'),
+        },
+        {
+          path: '/vegan',
+          name: 'vegan',
+          component: () => import('@/views/Recipe/RecipeCategories.vue'),
+        },
+        {
+          path: '/vegetarian',
+          name: 'vegetarian',
+          component: () => import('@/views/Recipe/RecipeCategories.vue'),
+        },
+        {
+          path: '/pescatarian',
+          name: 'pescatarian',
+          component: () => import('@/views/Recipe/RecipeCategories.vue'),
+        },
       ],
     },
     {
