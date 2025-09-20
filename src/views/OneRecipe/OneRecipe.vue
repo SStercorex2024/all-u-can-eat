@@ -4,6 +4,12 @@ import Insta from '@/components/icons/Insta.vue'
 import Facebook from '@/components/icons/Facebook.vue'
 import TicToc from '@/components/icons/TicToc.vue'
 import Pinterest from '@/components/icons/Pinterest.vue'
+import { onMounted } from 'vue'
+import CardRecipe from '@/components/CardRecipe.vue'
+
+onMounted(() => {
+  store.fetchRecipes()
+})
 
 const store = useRecipsStore()
 </script>
@@ -227,6 +233,16 @@ const store = useRecipsStore()
   <div v-else class="recipe-not-found">
     <div class="container">Sorry Recipe Not Found</div>
   </div>
+  <div class="recipe-extra">
+    <div class="recipe-extra__row">
+      <div class="container">
+        <h1 class="recipe-extra__title">Still hungry?</h1>
+      </div>
+    </div>
+    <div class="container">
+      <CardRecipe class="recipe-extra__cards" :all-items="store.allCategory" :initial-limit="3" />
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -434,10 +450,25 @@ dd {
   font-weight: 500;
 }
 
+.recipe-extra__row {
+  padding-block: 50px;
+  background-color: var(--color-gray);
+}
+
+.recipe-extra__cards {
+  padding-block: 40px;
+}
+
+.recipe-extra__title {
+  font-size: 48px;
+  color: var(--color-white);
+}
+
 @media (max-width: 886px) {
   .recipe-head__container {
     padding-block: 28px;
   }
+
   .recipe-body__about {
     grid-column: 1/-1;
   }
