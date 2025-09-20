@@ -268,7 +268,7 @@ const toggleShowAll = () => {
 
 @media (max-width: 924px) {
   .card__image {
-    width: 340px;
+    width: 320px;
   }
 }
 </style>

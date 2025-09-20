@@ -18,9 +18,8 @@ const listLinks: RecipeCategory[] = [
   'Dessert',
   'Vegan',
   'Vegetarian',
-  'Pescatarian'
+  'Pescatarian',
 ]
-
 </script>
 
 <template>
@@ -43,8 +42,10 @@ const listLinks: RecipeCategory[] = [
       </ul>
     </div>
   </div>
-  <div class="container recipe-body">
-    <CardRecipe :all-items="store.getRecipesByCategory(store.activeRecipe)" />
+  <div class="recipe-body">
+    <div class="container">
+      <CardRecipe :all-items="store.getRecipesByCategory(store.activeRecipe)" />
+    </div>
   </div>
 </template>
 

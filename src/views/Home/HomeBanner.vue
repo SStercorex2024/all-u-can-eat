@@ -337,6 +337,7 @@ const swiperOptions = {
   .banner__slider {
     width: 100vw;
   }
+
 }
 @media (max-width: 420px) {
   .slide-title {
@@ -344,6 +345,9 @@ const swiperOptions = {
   }
   .slide-content {
     row-gap: 10px;
+  }
+  .banner__title {
+    font-size: 52px;
   }
 }
 </style>
