@@ -126,6 +126,7 @@ const sliderImages = ['flow', 'InTrend', 'JUNE', 'MAX', 'NINO', 'ZINE']
     }
   }
 }
+
 @media (max-width: 660px) {
   .about__title {
     font-size: 42px;

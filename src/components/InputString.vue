@@ -2,7 +2,6 @@
 import type { InputString } from '@/Interfaces/InputString.ts'
 
 const props = defineProps<InputString>()
-
 const modelValue = defineModel<string>()
 </script>
 
@@ -13,6 +12,7 @@ const modelValue = defineModel<string>()
     :name="props.type"
     :placeholder="props.placeholder"
     :id="props.type"
+    :pattern="props.type === 'email' ? '[^\\s@]+@gmail\\.com' : undefined"
   />
 </template>
 

@@ -7,12 +7,10 @@ import Pinterest from '@/components/icons/Pinterest.vue'
 import Facebook from '@/components/icons/Facebook.vue'
 import { watch } from 'vue'
 import { useEmailStore } from '@/stores/EmailStore.ts'
-import { useRoute } from 'vue-router'
 
 const pages = ['About', 'Blog', 'Contact']
 
 const store = useEmailStore()
-const route = useRoute()
 
 watch(
   () => store.emailValue,
@@ -34,7 +32,7 @@ watch(
             <label class="footer__form-label" for="email"> Sign up for the newsletter. </label>
             <InputString v-model="store.emailValue" type="email" placeholder="Goy@gmail.com" />
             <OurButton
-              @click.prevent="store.omSubmitEmail(store.emailValue)"
+              @click.prevent="store.onSubmitEmail(store.emailValue)"
               class="footer__form-submit"
               :is-submit="true"
             >
